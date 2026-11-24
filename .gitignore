@@ -1,0 +1,17 @@
+# Full-size photo originals and raw source files stay on this computer only
+originals/
+source/
+
+# Anything in a project's private\ folder is never published (e.g. Argonne images awaiting approval)
+private/
+
+# Private list of every project/folder on this computer
+project-inventory.html
+
+# Local Claude settings
+.claude/settings.local.json
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
