@@ -12,6 +12,12 @@ David's mechanical-engineering portfolio. It's a static site with no build tools
 - `site.js`: renders index.html / project.html (`project.html?id=<id>`); it has a minimal Markdown parser (##, ###, lists, images, bold/italic, links, > quotes).
 - `project-inventory.html`: private list of every project found on the computer, with folder locations. Not linked from the site.
 
+## Publishing
+- Public GitHub repo `davidkrzysiak/portfolio`, served by GitHub Pages from `main` / root at https://davidkrzysiak.github.io/portfolio/
+- `Publish.bat` = build + commit + push. Only commit/push when David asks.
+- `.gitignore` keeps `originals/`, `source/`, `private/` and `project-inventory.html` off GitHub. Images not yet cleared for publishing go in a project's `private/` folder.
+- gh CLI is at `C:\Program Files\GitHub CLI\gh.exe` (may not be on PATH in older terminals).
+
 ## Rules
 - To add or update a project from a folder of files, follow `.claude/skills/add-project/SKILL.md`.
 - Never invent facts, numbers or outcomes. Write `TODO:` for missing info (highlighted on the site).

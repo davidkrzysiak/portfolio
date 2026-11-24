@@ -59,8 +59,16 @@ project-inventory.html     private list of every project found on this computer 
 CLAUDE.md, .claude\        instructions that let Claude maintain the site
 ```
 
+## Publishing (GitHub Pages)
+Live site: **https://davidkrzysiak.github.io/portfolio/** (repo: github.com/davidkrzysiak/portfolio)
+
+When you're happy with your changes, double-click **Publish.bat**. It rebuilds, saves a version and uploads.
+The live site updates about a minute later.
+
+**The repo is public**, so every file that gets uploaded can be seen by anyone. These never get uploaded (see `.gitignore`):
+`originals\`, `source\`, `private\` folders, and `project-inventory.html`.
+Put anything you're not ready to share (e.g. Argonne images awaiting approval) in a project's `private\` folder.
+
 ## Tips
 - **VS Code:** File → Open Folder → `Desktop\engineering-portfolio`. The **Live Server** extension auto-refreshes the browser.
-- **Putting it online later:** drag the folder onto Netlify Drop (app.netlify.com/drop) or use GitHub Pages.
-  Before publishing, check you're OK sharing every PDF and image in the top level of each project folder
-  (especially anything from Argonne), and delete the `originals` and `source` folders from the copy you upload.
+- Check your changes locally (open index.html) before running Publish.bat.
